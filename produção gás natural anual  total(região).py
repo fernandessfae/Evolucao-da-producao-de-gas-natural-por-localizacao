@@ -60,7 +60,7 @@ nordeste = nordeste.rename(columns = {'Produção de gás natural (milhões m3)'
 norte = norte.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
 sudeste = sudeste.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
 
-#Agora faremos a soma total da produção de todos os produtos energéticos e não energéticos para cada ano, e transforma-los em dataframe.
+#Agora faremos a soma total da produção de todos os produtores onshore e offshore para cada ano, e transforma-los em dataframe.
 nordeste = nordeste.groupby(['Ano'])['Produção de gás natural (m³)'].sum().to_frame()
 norte = norte.groupby(['Ano'])['Produção de gás natural (m³)'].sum().to_frame()
 sudeste = sudeste.groupby(['Ano'])['Produção de gás natural (m³)'].sum().to_frame()
