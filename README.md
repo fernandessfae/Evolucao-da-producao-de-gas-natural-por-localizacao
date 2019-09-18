@@ -1,5 +1,5 @@
-# Projeto DataScience -Evolução da produção de gás natural, por localização
-Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018. link do dataset: http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao
+# Projeto DataScience -Evolução da produção de gás natural, por localização, no Brasil
+Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018, no território brasileiro. link do dataset: http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao
 
 **1)Histograma Produção de Gás Natural Onshore**
 ![produçao gas natural anual (terra)](https://user-images.githubusercontent.com/48027825/65112425-056fd080-d9b6-11e9-9e06-3cef0671bdf7.png)
@@ -17,3 +17,13 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 
 **5)Histograma Produção de Gás Natural Total (Onshore X Offshore) Nacional**
 ![Produção total de gás natural onshore offshore em território brasileiro](https://user-images.githubusercontent.com/48027825/65121191-2d1a6500-d9c5-11e9-8fd6-fbfa42cf3fc6.png)
+
+**6)Previsão Produção de Gás Natural Onshore para os anos de 2019 e 2020**
+![produção gás natural onshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178397-009b3300-da2f-11e9-8ff7-aea8e79e4e16.png)
+
+
+**7)Previsão Produção de Gás Natural Offshore Nacional para os anos de 2019 e 2020**
+![produção gás natural offshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178415-0abd3180-da2f-11e9-9c85-e41f2fdf6762.png)
+
+**8)Previsão Produção de Gás Natural Total (Onshore X Offshore) Nacional para os anos de 2019 e 2020**
+![produção gás natural offshore onshore total (serie temporal)](https://user-images.githubusercontent.com/48027825/65178462-26283c80-da2f-11e9-9ea7-9f2bd6e68b28.png)
