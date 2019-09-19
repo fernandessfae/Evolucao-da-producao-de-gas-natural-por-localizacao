@@ -4,10 +4,8 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 **1)Histograma Produção de Gás Natural Onshore**
 ![produçao gas natural anual (terra)](https://user-images.githubusercontent.com/48027825/65112425-056fd080-d9b6-11e9-9e06-3cef0671bdf7.png)
 
-
 **2)Histograma Produção de Gás Natural Offshore**
 ![produçao gas natural anual (agua)](https://user-images.githubusercontent.com/48027825/65112410-fa1ca500-d9b5-11e9-9901-e9052038335f.png)
-
 
 **3)Histograma Produção de Gás Natural Onshore X Offshore**
 ![produçao gas natural anual (terra X agua)](https://user-images.githubusercontent.com/48027825/65112452-17517380-d9b6-11e9-9ed2-20b7dc36bde3.png)
@@ -24,9 +22,12 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 **7)Previsão Produção de Gás Natural Onshore para os anos de 2019 e 2020**
 ![produção gás natural onshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178397-009b3300-da2f-11e9-8ff7-aea8e79e4e16.png)
 
-
 **8)Previsão Produção de Gás Natural Offshore Nacional para os anos de 2019 e 2020**
 ![produção gás natural offshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178415-0abd3180-da2f-11e9-9c85-e41f2fdf6762.png)
 
 **9)Previsão Produção de Gás Natural Total (Onshore X Offshore) Nacional para os anos de 2019 e 2020**
 ![produção gás natural offshore onshore total (serie temporal)](https://user-images.githubusercontent.com/48027825/65178462-26283c80-da2f-11e9-9ea7-9f2bd6e68b28.png)
+
+**10)Matriz de Confusão (Naive Bays)**
+
+![produção gás natural naive bays](https://user-images.githubusercontent.com/48027825/65272087-d4e28080-daf4-11e9-92d8-a33699a6d514.png)
