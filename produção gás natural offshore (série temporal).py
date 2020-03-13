@@ -3,69 +3,35 @@ import matplotlib.pyplot as plt
 from pmdarima.arima import auto_arima
 from statsmodels.tsa.arima_model import ARIMA
 
-'''Aqui iremos fazer uma previsão dos estados produtores de gás natural offshore, para os anos de 2019 e 2020'''
+''' Aqui faremos um histograma com a produção total de gás natural (onshore/offshore) no Brasil
+    entre 2009 a 2018, e a sua previsão para 2019 e 2020.'''
 
 #Carregamento da base de dados
-dados = pd.read_csv('D:\\Meus Documentos\\Downloads\\Banco de dados\\Anuário Estatístico 2019 - Evolução da produção de gás natural, por localização.csv', sep = ';')
+dados = pd.read_csv('Anuário Estatístico 2019 - Evolução da produção de gás natural, por localização.csv', sep = ';', decimal = ',') 
 
-'''Agora faremos a separação dos estados produtores offshore.
-   1) Faremos a separação dos estados produtores de gás natural offshore usando uma lista para colocarmos num laço.
-   2) Iremos ajustar o novo dataframe desmembrado do dataframe inicial
-   3) Transformaremos as listas em novo dataframe
-   4) Alteração nos nomes das colunas para o mesmo do dataframe inicial'''
+#Conversão de milhôes m³ para m³
+dados['Produção de gás natural (milhões m3)'] = dados['Produção de gás natural (milhões m3)'].mul(1000000)
 
-# 1º Passo
-offshore = []
+#Renomeação da coluna
+dados = dados.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
 
-# 2º Passo
-for index, column in dados.iterrows():
-    if column['Localização'] == 'Mar':
-        m = column['UF'], column['Localização'], column['Ano'], column['Produção de gás natural (milhões m3)']
-        offshore.append(m)
+#Soma de toda a produção de cada ano
+dados = dados.groupby(['Ano'])['Produção de gás natural (m³)'].sum()
 
-# 3º Passo
-offshore = pd.DataFrame(list(offshore))
-
-# 4º Passo
-offshore.columns = ['UF', 'Localização', 'Ano', 'Produção de gás natural (milhões m3)']
-
-#Precisaremos fazer a transformação dos números da coluna 'Produção de gás natural (milhões m3)' para o tipo float, pelo fato do python não reconhecer a ',' como elemento separador de número.
-offshore['Produção de gás natural (milhões m3)'] = offshore['Produção de gás natural (milhões m3)'].str.replace(",", ".").astype(float)
-
-#Multiplicar a coluna ['Produção de gás natural (milhões m3'] por 1000000.
-offshore['Produção de gás natural (milhões m3)'] = offshore['Produção de gás natural (milhões m3)'].mul(1000000)
-
-#Renomear a 'Produção de gás natural (milhões m3)' por ''Produção de gás natural (m3)''
-offshore = offshore.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
-
-#Agora faremos a soma total da produção de todos os produtos energéticos e não energéticos para cada ano.
-offshore = offshore.groupby(['Ano'])['Produção de gás natural (m³)'].sum()
-
-#Transformar os números de cada série anual numa lista com a produção anual
-offshore = [float(i) for i in offshore]
-
-#Tranformar a lista num dataframe
-offshore = pd.DataFrame(list(offshore))
-
-#Renomear a coluna 0 por 'Produção Anual'
-offshore = offshore.rename(columns = {0 : 'Produção Anual'})
-
-#Adiciona uma nova coluna com os anos correspondentes a sua produção.
-offshore['Ano'] = [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
+#Reset do index do dataframe
+dados = dados.reset_index()
 
 #Vamos exportar esse novo dataframe para transforma-lo em arquivo CSV
-offshore.to_csv(r'D:\Meus Documentos\Desktop\Projetos Cientista de Dados\G2.08 - Evolução da produção de gás natural, por localização (terra e mar) – 2009 a 2018\Produção_gas_natural_offshore_serie_temporal.csv')
+dados.to_csv(r'D:\Meus Documentos\Desktop\Projetos Cientista de Dados\G2.08 - Evolução da produção de gás natural, por localização (terra e mar) – 2009 a 2018\Produção_gas_natural_total_serie_temporal.csv')
 
 #Novo banco de dados com os estados produtores de gás natural onshore de 2009 a 2018
-dados2 = pd.read_csv('D:\Meus Documentos\Desktop\Projetos Cientista de Dados\G2.08 - Evolução da produção de gás natural, por localização (terra e mar) – 2009 a 2018\Produção_gas_natural_offshore_serie_temporal.csv')
+dados2 = pd.read_csv('Produção_gas_natural_total_serie_temporal.csv')
 
 print(dados2.dtypes)
 
 #Precisamos transformar o ano do tipo 'object' para o ano tipo data para ser aplicada na série temporal
 dateparse = lambda dates:pd.datetime.strptime(dates, '%Y')
-
-dados2 = pd.read_csv('D:\Meus Documentos\Desktop\Projetos Cientista de Dados\G2.08 - Evolução da produção de gás natural, por localização (terra e mar) – 2009 a 2018\Produção_gas_natural_offshore_serie_temporal.csv',
-                     parse_dates = ['Ano'], index_col = 'Ano', date_parser = dateparse)
+dados2 = pd.read_csv('Produção_gas_natural_total_serie_temporal.csv', parse_dates = ['Ano'], index_col = 'Ano', date_parser = dateparse)
 
 #Remover a primeira coluna do dataframe
 dados2 = dados2.drop('Unnamed: 0', axis = 1)
@@ -86,7 +52,7 @@ proximo_ano = modelo_auto.predict(n_periods = 2)
    Lembrando que o auto ARIMA determina varios parâmetros, e maquina escolhe o mais apropriado para ela, entretanto é importante
    testar outros parâmetros para ver como se sai o gráfico da série temporal.'''
    
-modelo = ARIMA(dados2, order = [2, 0, 0])
+modelo = ARIMA(dados2, order = [1, 1, 1])
 modelo_treinado = modelo.fit()
 
 #visualizar os detalhes/parâmetros do modelo
