@@ -63,3 +63,7 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 **5) Random Forest**
 
 ![Figure_1](https://user-images.githubusercontent.com/48027825/76710412-1c357c80-66e6-11ea-9987-ff720565c875.png)
+
+**6) Máquina de vetor de Suporte (SVM)**
+
+![Figure_1](https://user-images.githubusercontent.com/48027825/76710805-2c029000-66e9-11ea-9fcc-8b3cebf3cc27.png)
