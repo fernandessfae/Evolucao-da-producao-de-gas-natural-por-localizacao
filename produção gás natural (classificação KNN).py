@@ -23,7 +23,7 @@ previsores[:, 0] = labelencoder.fit_transform(previsores[:, 0])
 #Aqui hávera a divisão dos dados para treinamento e teste passando como parâmetros(variavel independente, variável resposta, a amostra de teste[0 até 1] e divisao da base de dados igual)
 X_treinamento, X_teste, y_treinamento, y_teste = train_test_split(previsores, classe, test_size = 0.3, random_state = 0)
 
-#Faz a previsão do algoritmo knn usando a base de teste
+#Faz a previsão do algoritmo knn usando a base de treinamento
 knn = KNeighborsClassifier(n_neighbors = 5)
 knn.fit(X_treinamento, y_treinamento)
 
