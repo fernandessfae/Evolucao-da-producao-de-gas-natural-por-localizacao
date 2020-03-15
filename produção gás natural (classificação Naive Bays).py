@@ -42,3 +42,5 @@ v = ConfusionMatrix(naive_bayes)
 v.fit(X_treinamento, y_treinamento)
 v.score(X_teste, y_teste)
 v.poof()
+
+''' A taxa de acerto do modelo foi de 60%, aproximadamente, com 30% dos dados para teste.'''
