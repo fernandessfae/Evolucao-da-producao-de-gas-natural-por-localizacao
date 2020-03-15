@@ -44,6 +44,10 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 
 ## Classificação utilizando Machine Learning
 
-**1)Matriz de Confusão (Naive Bays)**
+**1)Naive Bays**
 
-![produção gás natural naive bays](https://user-images.githubusercontent.com/48027825/65272087-d4e28080-daf4-11e9-92d8-a33699a6d514.png)
+![Figure_1](https://user-images.githubusercontent.com/48027825/76709366-fc4d8b00-66dc-11ea-83c1-ca620ea1f5f6.png)
+
+**2)Árvore de Decisão**
+
+![Figure_2](https://user-images.githubusercontent.com/48027825/76709367-fd7eb800-66dc-11ea-9590-64a93598cbd6.png)
