@@ -59,3 +59,7 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 **4) Regressão Logística**
 
 ![Figure_1](https://user-images.githubusercontent.com/48027825/76710099-4b96ba00-66e3-11ea-9cf0-b72986ad7812.png)
+
+**5) Random Forest**
+
+![Figure_1](https://user-images.githubusercontent.com/48027825/76710412-1c357c80-66e6-11ea-9987-ff720565c875.png)
