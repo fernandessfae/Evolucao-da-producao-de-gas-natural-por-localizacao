@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, accuracy_score
@@ -17,6 +17,10 @@ classe = dados.iloc[:, 1].values
 #Aqui iremos transformar as colunas categóricas em colunas numéricas
 labelencoder = LabelEncoder()
 previsores[:, 0] = labelencoder.fit_transform(previsores[:, 0])
+
+#Fazendo a padronização dos atributos previsores
+scaler = StandardScaler()
+previsores = scaler.fit_transform(previsores)
 
 #Aqui hávera a divisão dos dados para treinamento e teste passando como parâmetros(variavel independente, variável resposta, a amostra de teste[0 até 1] e divisao da base de dados igual)
 X_treinamento, X_teste, y_treinamento, y_teste = train_test_split(previsores, classe, test_size = 0.3, random_state = 0)
@@ -41,4 +45,4 @@ v.fit(X_treinamento, y_treinamento)
 v.score(X_teste, y_teste)
 v.poof()
 
-''' A taxa de acerto do modelo foi de 45,8%, aproximadamente, com 30% dos dados para teste.'''
+''' A taxa de acerto do modelo foi de 47,9%, aproximadamente, com 30% dos dados para teste.'''
