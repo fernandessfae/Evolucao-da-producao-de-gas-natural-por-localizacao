@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score
 from yellowbrick.classifier import ConfusionMatrix
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 '''Aqui vamos usar um método de classificação usando o KNN, para saber como o computador irá dizer qual grupo pertence localização das plataformas de gás natural. '''
 
@@ -19,6 +19,10 @@ classe = dados.iloc[:, 1].values
 #Aqui iremos transformar as colunas categóricas em colunas numéricas
 labelencoder = LabelEncoder()
 previsores[:, 0] = labelencoder.fit_transform(previsores[:, 0])
+
+#Fazendo a padronização dos atributos previsores
+scaler = StandardScaler()
+previsores = scaler.fit_transform(previsores)
 
 #Aqui hávera a divisão dos dados para treinamento e teste passando como parâmetros(variavel independente, variável resposta, a amostra de teste[0 até 1] e divisao da base de dados igual)
 X_treinamento, X_teste, y_treinamento, y_teste = train_test_split(previsores, classe, test_size = 0.3, random_state = 0)
@@ -43,4 +47,4 @@ v.fit(X_treinamento, y_treinamento)
 v.score(X_teste, y_teste)
 v.poof()
 
-''' A taxa de acerto do modelo foi de 77,1%, aproximadamente, com 30% dos dados para teste e knn = 5.'''
+''' A taxa de acerto do modelo foi de 91,7%, aproximadamente, com 30% dos dados para teste e knn = 5.'''
