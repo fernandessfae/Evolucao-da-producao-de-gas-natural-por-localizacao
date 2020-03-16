@@ -70,4 +70,4 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 
 **7) Rede neural (MLP)**
 
-![Figure_1](https://user-images.githubusercontent.com/48027825/76799072-9b42b780-67af-11ea-9d92-6e14b29f2402.png)
+![Figure_1](https://user-images.githubusercontent.com/48027825/76802010-810bd800-67b5-11ea-8adc-63930a84680b.png)
