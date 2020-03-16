@@ -67,3 +67,7 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 **6) Máquina de vetor de Suporte (SVM)**
 
 ![Figure_1](https://user-images.githubusercontent.com/48027825/76710805-2c029000-66e9-11ea-9fcc-8b3cebf3cc27.png)
+
+**7) Rede neural (MLP)**
+
+![Figure_1](https://user-images.githubusercontent.com/48027825/76799072-9b42b780-67af-11ea-9d92-6e14b29f2402.png)
