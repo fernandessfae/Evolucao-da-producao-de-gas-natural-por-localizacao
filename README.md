@@ -1,4 +1,4 @@
-# Projeto DataScience -Evolução da produção de gás natural, por localização, no Brasil
+# Projeto DataScience - Evolução da produção de gás natural, por localização, no Brasil
 Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018, no território brasileiro. link do dataset: http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao
 
 
@@ -58,7 +58,7 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 
 **4) Regressão Logística**
 
-![Figure_1](https://user-images.githubusercontent.com/48027825/76710099-4b96ba00-66e3-11ea-9cf0-b72986ad7812.png)
+![Figure_1](https://user-images.githubusercontent.com/48027825/76801412-638a3e80-67b4-11ea-8990-137e8ab2ceb9.png)
 
 **5) Random Forest**
 
