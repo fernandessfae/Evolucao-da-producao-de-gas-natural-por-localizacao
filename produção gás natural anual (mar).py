@@ -7,14 +7,7 @@ import numpy as np
 dados = pd.read_csv('Anuário Estatístico 2019 - Evolução da produção de gás natural, por localização.csv', sep = ';', decimal = ',')
 
 # Separação dos estados produtores de gás natural offshore
-al = []
-ba = []
-ce = []
-es = []
-rn = []
-rj = []
-se = []
-sp = []
+al, ba, ce, es, rn, rj, se, sp = ([] for i in range(8))
 
 for index, column in dados.iterrows():
     if column['Localização'] == 'Mar' and column['UF'] == 'Alagoas':
@@ -42,7 +35,7 @@ for index, column in dados.iterrows():
         sao = column['UF'], column['Localização'], column['Ano'], column['Produção de gás natural (milhões m3)']
         sp.append(sao)
 
-#Criação dos dataframes de cada estado
+#Criação da função de dataframe de cada estado
 def novo_dataframe(n):
     n = pd.DataFrame(list(n))
     n.columns = ['UF', 'Localização', 'Ano', 'Produção de gás natural (milhões m3)']
@@ -50,6 +43,7 @@ def novo_dataframe(n):
     n = n.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
     return n
 
+#Tranformação das listas em dataframes
 al = novo_dataframe(al)
 ba = novo_dataframe(ba)
 ce = novo_dataframe(ce)
@@ -62,12 +56,35 @@ sp = novo_dataframe(sp)
 #Criação dos histogramas para a produção offshore de cada estado
 def histograma(x):
     plt.figure(figsize = (10, 5))
-    plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'blue')
     plt.xticks(x['Ano'])
     plt.xlabel('Produção gás natural anual')
-    plt.ylabel('Total Produção Anual (m³)')
-    plt.title(f'Produção de gás natural offshore {x.iloc[0, 0]} (2009 - 2018)')
+    plt.ylabel('Quantidade (m³)')
+    if x is al:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'blue')
+        plt.title('Produção total de gás natural offshore no estado de Alagoas')
+    elif x is ba:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'yellow')
+        plt.title('Produção total de gás natural offshore no estado da Bahia')
+    elif x is ce:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'brown')
+        plt.title('Produção total de gás natural offshore no estado do Ceará')
+    elif x is es:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'red')
+        plt.title('Produção total de gás natural offshore no estado do Espírito Santo')
+    elif x is rn:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'green')
+        plt.title('Produção total de gás natural offshore no estado do Rio Grande do Norte')
+    elif x is rj:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'gray')
+        plt.title('Produção total de gás natural offshore no estado do Rio de Janeiro')
+    elif x is se:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'purple')
+        plt.title('Produção total de gás natural offshore no estado de Sergipe')
+    else:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'pink')
+        plt.title(f'Produção total de gás natural offshore no estado de São Paulo')
 
+#Visualização dos gráficos
 histograma(al)
 histograma(ba)
 histograma(ce)
@@ -77,9 +94,9 @@ histograma(rj)
 histograma(se)
 histograma(sp)
 
-#Plotando o gráfico comparando todos os estados produtores de gás natural offshore entre os anos de 2009 a 2018
+#Plotando o gráfico comparando todos os produtores de gás natural offshore
 barWidth = 0.1
-plt.figure(figsize = (10, 5))
+plt.figure(figsize = (15, 5))
 r1 = np.arange(len(al.iloc[:, 2]))
 r2 = [x + barWidth for x in r1]
 r3 = [x + barWidth for x in r2]
@@ -96,10 +113,10 @@ plt.bar(r5, rn.iloc[:, 3], color = '#4169E1', width = barWidth, label = 'RN')
 plt.bar(r6, rj.iloc[:, 3], color = '#1E90FF', width = barWidth, label = 'RJ')
 plt.bar(r7, se.iloc[:, 3], color = '#00BFFF', width = barWidth, label = 'SE')
 plt.bar(r8, sp.iloc[:, 3], color = '#87CEFA', width = barWidth, label = 'SP')
-plt.xlabel('Produção gás natural (ano)')
+plt.xlabel('Produção gás natural anual')
 plt.xticks([r + barWidth for r in range(len(al.iloc[:, 3]))], al['Ano'])
-plt.ylabel('Total Produção Anual (10^10 m³)')
-plt.title('Produção de gás natural dos estados produtores offshore (2009 - 2018)')
+plt.ylabel('Quantidade (m³)')
+plt.title('Produção total de gás natural dos estados produtores offshore')
 plt.legend(loc = 'best')
 plt.tight_layout()
-plt.show() 
+plt.show()
