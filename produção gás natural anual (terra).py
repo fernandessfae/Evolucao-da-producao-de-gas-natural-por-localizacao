@@ -7,14 +7,7 @@ import numpy as np
 dados = pd.read_csv('Anuário Estatístico 2019 - Evolução da produção de gás natural, por localização.csv', sep = ';', decimal = ',')
 
 # Separação dos estados produtores de gás natural onshore
-al = []
-am = []
-ba = []
-ce = []
-es = []
-ma = []
-rn = []
-se = []
+al, am, ba, ce, es, ma, rn, se = ([] for i in range(8))
 
 for index, column in dados.iterrows():
     if column['Localização'] == 'Terra' and column['UF'] == 'Alagoas':
@@ -42,7 +35,7 @@ for index, column in dados.iterrows():
         ser = column['UF'], column['Localização'], column['Ano'], column['Produção de gás natural (milhões m3)']
         se.append(ser)
 
-#Criação dos dataframes de cada estado
+#Criação  da função dr dataframe de cada estado
 def novo_dataframe(n):
     n = pd.DataFrame(list(n))
     n.columns = ['UF', 'Localização', 'Ano', 'Produção de gás natural (milhões m3)']
@@ -50,6 +43,7 @@ def novo_dataframe(n):
     n = n.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
     return n
 
+#Tranformação das listas em dataframes
 al = novo_dataframe(al)
 am = novo_dataframe(am)
 ba = novo_dataframe(ba)
@@ -59,15 +53,38 @@ ma = novo_dataframe(ma)
 rn = novo_dataframe(rn)
 se = novo_dataframe(se)
 
-#Criação dos histogramas para a produção onshore de cada estado
+#Criação da função de histogramas para a produção onshore de cada estado
 def histograma(x):
     plt.figure(figsize = (10, 5))
-    plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'brown')
     plt.xticks(x['Ano'])
     plt.xlabel('Produção gás natural anual')
-    plt.ylabel('Total Produção Anual (m³)')
-    plt.title(f'Produção de gás natural onshore {x.iloc[0, 0]} (2009 - 2018)')
+    plt.ylabel('Quantidade (m³)')
+    if x is al:        
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'brown')
+        plt.title('Produção total de gás natural onshore no estado de Alagoas')
+    elif x is am:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'blue')
+        plt.title('Produção total de gás natural onshore no estado do Amazonas')
+    elif x is ba:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'yellow')
+        plt.title('Produção total de gás natural onshore no estado da Bahia')
+    elif x is ce:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'red')
+        plt.title('Produção total de gás natural onshore no estado do Ceará')
+    elif x is es:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'green')
+        plt.title('Produção total de gás natural onshore no estado do Espírito Santo')
+    elif x is ma:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'gray')
+        plt.title('Produção total de gás natural onshore no estado do Maranhão')
+    elif x is rn:
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'pink')
+        plt.title('Produção total de gás natural onshore no estado do Rio Grande do Norte')
+    else:      
+        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'purple')
+        plt.title('Produção de gás natural onshore no estado de Sergipe')
 
+#Visualização dos gráficos        
 histograma(al)
 histograma(am)
 histograma(ba)
@@ -77,9 +94,9 @@ histograma(ma)
 histograma(rn)
 histograma(se)
 
-#Plotando o gráfico comparando todos os produtores de gás natural onshore entre os anos de 2009 a 2018
+#Plotando o gráfico comparando todos os produtores de gás natural onshore
 barWidth = 0.1
-plt.figure(figsize = (10, 5))
+plt.figure(figsize = (15, 5))
 r1 = np.arange(len(al.iloc[:, 2]))
 r2 = [x + barWidth for x in r1]
 r3 = [x + barWidth for x in r2]
@@ -98,8 +115,8 @@ plt.bar(r7, rn.iloc[:, 3], color = '#D2691E', width = barWidth, label = 'RN')
 plt.bar(r8, se.iloc[:, 3], color = '#F4A460', width = barWidth, label = 'SE')
 plt.xlabel('Produção gás natural (ano)')
 plt.xticks([r + barWidth for r in range(len(al.iloc[:, 3]))], al['Ano'])
-plt.ylabel('Total Produção Anual (10^9 m³)')
-plt.title('Produção de gás natural dos estados produtores onshore (2009 - 2018)')
+plt.ylabel('Quantidade (m³)')
+plt.title('Produção de gás natural dos estados produtores onshore')
 plt.legend(loc = 'best')
 plt.tight_layout()
 plt.show()
