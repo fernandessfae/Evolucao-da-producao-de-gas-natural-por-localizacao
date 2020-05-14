@@ -9,6 +9,10 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 #Carregamento da base de dados
 offshore = pd.read_csv('Anuário Estatístico 2019 - Evolução da produção de gás natural, por localização.csv', sep = ';', decimal = ',', index_col = 'Localização')
 
+#Remoção de linhas e colunas desnecessárias para a série temporal offshore
+offshore = offshore.drop(['UF'], axis = 1)
+offshore = offshore.drop('Terra')
+
 #Multiplicar a coluna ['Produção de gás natural (milhões m3'] por 1000000.
 offshore['Produção de gás natural (milhões m3)'] = offshore['Produção de gás natural (milhões m3)'].mul(1000000)
 
