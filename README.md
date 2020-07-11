@@ -9,8 +9,6 @@ Sabemos que a produção de gás natural é um forte indicador para saber como e
 #### Produção total de Gás Natural por Estados (Onshore)
 ![gás natural anual onshore (estados)](https://user-images.githubusercontent.com/48027825/87231344-d5eae400-c38c-11ea-958a-75e300bdac70.png)
 
-Análisando esse gráfico, o estado do **Amazonas** tem um elevado potencial de extração de gás natural. Em breve, farei uma análise específica sobre os estado onshore.
-
 #### Produção total de Gás Natural por Estados (Offshore)
 ![gás natural anual offshore (estados)](https://user-images.githubusercontent.com/48027825/87231345-d7b4a780-c38c-11ea-9eb2-426044bd95c0.png)
 
