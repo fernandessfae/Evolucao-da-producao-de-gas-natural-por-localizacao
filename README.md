@@ -1,25 +1,30 @@
 # Evolução da produção de gás natural, por localização, no Brasil
-Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018, no território brasileiro. link do dataset: http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao
+Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018, no território brasileiro, divididos em estados, regiões e federação.
 
-## Histogramas
+## Análise Exploratória
+Sabemos que a produção de gás natural é um forte indicador para saber como está a produção de petroléo num estado, região ou país. Sem contar a importância que o gás natural tem em função de ser um gás muito versátil para muitas finalidades. Sabendo disso, pegaremos os dados presentes, disponibilizados pela ANP [aqui](http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao), para entender melhor a dinâmica do setor petrolífero durante esses e anos, e tentar fazer previsões para esse setor.
 
-**1)Histograma Produção de Gás Natural Onshore**
-![produçao gas natural anual (terra)](https://user-images.githubusercontent.com/48027825/65112425-056fd080-d9b6-11e9-9e06-3cef0671bdf7.png)
+### Visualização em gráfico de barras
 
-**2)Histograma Produção de Gás Natural Offshore**
-![produçao gas natural anual (agua)](https://user-images.githubusercontent.com/48027825/65112410-fa1ca500-d9b5-11e9-9901-e9052038335f.png)
+#### Produção total de Gás Natural por Estados (Onshore)
+![gás natural anual onshore (estados)](https://user-images.githubusercontent.com/48027825/87231344-d5eae400-c38c-11ea-958a-75e300bdac70.png)
 
-**3)Histograma Produção de Gás Natural Onshore X Offshore**
-![produçao gas natural anual (terra X agua)](https://user-images.githubusercontent.com/48027825/65112452-17517380-d9b6-11e9-9ed2-20b7dc36bde3.png)
+Análisando esse gráfico, o estado do **Amazonas** tem um elevado potencial de extração de gás natural. Em breve, farei uma análise específica sobre os estado onshore.
 
-**4)Histograma Produção de Gás Natural Total (Onshore e Offshore) por estado**
-![produção gás natural anual total (estados)](https://user-images.githubusercontent.com/48027825/65186725-9c816a80-da40-11e9-8e2a-2292a64eb32b.png)
+#### Produção total de Gás Natural por Estados (Offshore)
+![gás natural anual offshore (estados)](https://user-images.githubusercontent.com/48027825/87231345-d7b4a780-c38c-11ea-9eb2-426044bd95c0.png)
 
-**5)Histograma Produção de Gás Natural Total (Onshore e Offshore) por região**
-![produção gás natural onshore offshore por região](https://user-images.githubusercontent.com/48027825/65121142-1d9b1c00-d9c5-11e9-9e84-898c3705a9e2.png)
+#### Produção total de Gás Natural por Estado (Onshore e Offshore) 
+![gás natural anual total (estados)](https://user-images.githubusercontent.com/48027825/87231347-dbe0c500-c38c-11ea-93e7-86b939678b33.png)
 
-**6)Histograma Produção de Gás Natural Total (Onshore e Offshore) Nacional**
-![Figure_1](https://user-images.githubusercontent.com/48027825/76630148-45a3ac00-651e-11ea-95cd-cb5dca012113.png)
+#### Produção total de Gás Natural por Região (Onshore e Offshore) 
+![gás natural anual total (regiões)](https://user-images.githubusercontent.com/48027825/87231348-ddaa8880-c38c-11ea-8be0-17fdfea41ca0.png)
+
+#### Produção total de Gás Natural Nacional (Onshore X Offshore)
+![gás natural anual onshore e offshore (brasil)](https://user-images.githubusercontent.com/48027825/87231542-6544c700-c38e-11ea-9fc7-c971946d43ba.png)
+
+#### Produção total de Gás Natural Nacional (Onshore e Offshore) 
+![gás natural anual total (brasil)](https://user-images.githubusercontent.com/48027825/87231354-e4390000-c38c-11ea-9c53-5d1d088c94d1.png)
 
 ## Utilização de séries temporais
 
