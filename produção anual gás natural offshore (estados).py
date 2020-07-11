@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 ''' Aqui vamos fazer um histograma com a produção de gás natural offshore (por mar) de cada estado produtor, no Brasil.'''
 
@@ -49,32 +50,30 @@ sp = novo_dataframe(sp)
 def histograma(x):
     plt.figure(figsize = (10, 5))
     plt.xticks(x['Ano'])
-    plt.xlabel('Produção gás natural anual')
-    plt.ylabel('Quantidade (m³)')
     if x is al:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'blue')
-        plt.title('Produção total de gás natural offshore no estado de Alagoas')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'blue', data = al)
+        plt.title('Produção total de gás natural offshore no estado de Alagoas', fontsize = 16, fontweight = 'bold')
     elif x is ba:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'yellow')
-        plt.title('Produção total de gás natural offshore no estado da Bahia')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'yellow', data = ba)
+        plt.title('Produção total de gás natural offshore no estado da Bahia', fontsize = 16, fontweight = 'bold')
     elif x is ce:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'brown')
-        plt.title('Produção total de gás natural offshore no estado do Ceará')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'brown', data = ce)
+        plt.title('Produção total de gás natural offshore no estado do Ceará', fontsize = 16, fontweight = 'bold')
     elif x is es:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'red')
-        plt.title('Produção total de gás natural offshore no estado do Espírito Santo')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'red', data = es)
+        plt.title('Produção total de gás natural offshore no estado do Espírito Santo', fontsize = 16, fontweight = 'bold')
     elif x is rn:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'green')
-        plt.title('Produção total de gás natural offshore no estado do Rio Grande do Norte')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'green', data = rn)
+        plt.title('Produção total de gás natural offshore no estado do Rio Grande do Norte', fontsize = 16, fontweight = 'bold')
     elif x is rj:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'gray')
-        plt.title('Produção total de gás natural offshore no estado do Rio de Janeiro')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'gray', data = rj)
+        plt.title('Produção total de gás natural offshore no estado do Rio de Janeiro', fontsize = 16, fontweight = 'bold')
     elif x is se:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'purple')
-        plt.title('Produção total de gás natural offshore no estado de Sergipe')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'purple', data = se)
+        plt.title('Produção total de gás natural offshore no estado de Sergipe', fontsize = 16, fontweight = 'bold')
     elif x is sp:
-        plt.bar(x.iloc[:, 2], x.iloc[:, 3], color = 'pink')
-        plt.title('Produção total de gás natural offshore no estado de São Paulo')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'pink', data = sp)
+        plt.title('Produção total de gás natural offshore no estado de São Paulo', fontsize = 16, fontweight = 'bold')
 
 #Visualização dos gráficos
 histograma(al)
