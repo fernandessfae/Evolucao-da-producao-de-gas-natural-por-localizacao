@@ -2,7 +2,7 @@
 Evolução da produção de gás natural, por localização entre os anos de 2009 a 2018, no território brasileiro, divididos em estados, regiões e federação.
 
 ## Análise Exploratória
-Sabemos que a produção de gás natural é um forte indicador para saber como está a produção de petroléo num estado, região ou país. Sem contar a importância que o gás natural tem em função de ser um gás muito versátil para muitas finalidades. Sabendo disso, pegaremos os dados presentes, disponibilizados pela ANP [aqui](http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao), para entender melhor a dinâmica do setor petrolífero durante esses e anos, e tentar fazer previsões para esse setor.
+Sabemos que a produção de gás natural é um forte indicador para saber como está a produção de petroléo num estado, região ou país. Sem contar a importância que o gás natural tem em função de ser um gás muito versátil para muitas finalidades. Sabendo disso, pegaremos os dados presentes, disponibilizados pela ANP [aqui](http://dados.gov.br/dataset/g2-08-anuario-estatistico-2019-evolucao-da-producao-de-gas-natural-por-localizacao), para entender melhor a dinâmica do setor petrolífero durante esses e anos, e tentar fazer previsões para esse setor. Os dados também estarão presentes nesse repositório.
 
 ### Visualização em gráfico de barras
 
