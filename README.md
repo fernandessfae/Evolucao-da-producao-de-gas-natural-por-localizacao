@@ -40,37 +40,3 @@ Evolução da produção de gás natural, por localização entre os anos de 200
 
 **6)Previsão Produção de Gás Natural Total (Onshore X Offshore) Nacional para os anos de 2019 e 2020 (AUTOARIMA)**
 ![produção gás natural offshore onshore total (serie temporal)](https://user-images.githubusercontent.com/48027825/65178462-26283c80-da2f-11e9-9ea7-9f2bd6e68b28.png)
-
-## Classificação utilizando Machine Learning
-
-**1)Naive Bays**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76709366-fc4d8b00-66dc-11ea-83c1-ca620ea1f5f6.png)
-
-**2)Árvore de Decisão**
-
-![Figure_2](https://user-images.githubusercontent.com/48027825/76709367-fd7eb800-66dc-11ea-9590-64a93598cbd6.png)
-
-**3)KNN**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76801133-d0e99f80-67b3-11ea-838b-4d4ad5992543.png)
-
-**4) Regressão Logística**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76801412-638a3e80-67b4-11ea-8990-137e8ab2ceb9.png)
-
-**5) Random Forest**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76710412-1c357c80-66e6-11ea-9987-ff720565c875.png)
-
-**6) Máquina de vetor de Suporte (SVM)**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76710805-2c029000-66e9-11ea-9fcc-8b3cebf3cc27.png)
-
-**7) Rede neural (MLP)**
-
-![Figure_1](https://user-images.githubusercontent.com/48027825/76802010-810bd800-67b5-11ea-8adc-63930a84680b.png)
-
-**Resultado da validação estatística para os modelos de classificação (machine learning)**
-
-![Rplot](https://user-images.githubusercontent.com/48027825/76808479-ae14b680-67c6-11ea-88b7-b5fccf667e19.png)
