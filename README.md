@@ -56,3 +56,9 @@ Acesso ao script para a geração desses gráficos [aqui](https://github.com/fer
 ![produção gás natural offshore onshore total (serie temporal)](https://user-images.githubusercontent.com/48027825/65178462-26283c80-da2f-11e9-9ea7-9f2bd6e68b28.png)
 
 Acesso ao script para a geração desses gráficos [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20onshore%20offshore%20total%20(s%C3%A9rie%20temporal).py)
+
+## Informações relevantes sobre esses dados
+Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de uma forma mais detalhada com mais informações sobre a produção de gás natural em cada estado, região e país, juntamente com a sua previsão futura.
+
+- Estados
+  - [Alagoas]()
