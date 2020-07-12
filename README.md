@@ -19,6 +19,8 @@ Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natur
 #### Produção total de Gás Natural por Estado (Onshore e Offshore) 
 ![gás natural anual total (estados)](https://user-images.githubusercontent.com/48027825/87231347-dbe0c500-c38c-11ea-93e7-86b939678b33.png)
 
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(estado).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore%20e%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado.
+
 #### Produção total de Gás Natural por Região (Onshore e Offshore) 
 ![gás natural anual total (regiões)](https://user-images.githubusercontent.com/48027825/87231348-ddaa8880-c38c-11ea-8be0-17fdfea41ca0.png)
 
