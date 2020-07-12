@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 ''' Aqui vamos fazer um histograma com a produção de gás natural total onshore e offshore por região, entre os anos de 2009 a 2018.'''
 
@@ -35,17 +36,16 @@ sudeste = novo_dataframe(sudeste)
 def histograma(x):
     plt.figure(figsize = (10, 5))
     plt.xticks(x['Ano'])
-    plt.xlabel('Produção Anual')
-    plt.ylabel('Quantidade (m³)')
     if x is nordeste:
-       plt.bar(x.iloc[:, 0], x.iloc[:, 1], color = 'orange')
-       plt.title('Produção de gás natural total na região nordeste')
+       sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'orange', data = nordeste)
+       plt.title('Produção de gás natural total na região nordeste', fontsize = 16, fontweight = 'bold')
     elif x is norte:
-       plt.bar(x.iloc[:, 0], x.iloc[:, 1], color = 'green') 
-       plt.title('Produção de gás natural total na região norte')
-    else:
-        plt.bar(x.iloc[:, 0], x.iloc[:, 1], color = 'yellow')
-        plt.title('Produção de gás natural total na região sudeste')
+       sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'green', data = norte) 
+       plt.title('Produção de gás natural total na região norte', fontsize = 16, fontweight = 'bold')
+    elif x is sudeste:
+       sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'yellow', data = sudeste)
+       plt.title('Produção de gás natural total na região sudeste', fontsize = 16, fontweight = 'bold')
+    plt.show()
 
 #Visualização dos gráficos        
 histograma(nordeste)
