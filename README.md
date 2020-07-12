@@ -36,22 +36,23 @@ Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natur
 
 Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(brasil).py) o script com os códigos para gerar esse gráfico.
 
-## Utilização de séries temporais
+## Previsão dos próximos anos
+Após uma análise nos gráficos de toda a produção estadual, regional e nacional, iremos fazer a previsão da produção total nacional, utilizando o ARIMA.
 
-**1)Decomposição série temporal Produção de Gás Natural Onshore Nacional entre os anos de 2009 a 2018**
+#### Decomposição da série temporal e previsão da produção de Gás Natural Onshore Nacional para os anos de 2019 e 2020
 ![Figure_1](https://user-images.githubusercontent.com/48027825/76637691-f794a580-6529-11ea-9a00-7f1d232e715a.png)
-
-**2)Decomposição série temporal Produção de Gás Natural Offshore Nacional entre os anos de 2009 a 2018**
-![Figure_2](https://user-images.githubusercontent.com/48027825/76637696-f8c5d280-6529-11ea-9188-66a448d0e605.png)
-
-**3)Decomposição série temporal Produção de Gás Natural Total Nacional entre os anos de 2009 a 2018**
-![Figure_1](https://user-images.githubusercontent.com/48027825/76637970-6c67df80-652a-11ea-9cad-fb38d8b7567a.png)
-
-**4)Previsão Produção de Gás Natural Onshore Nacional para os anos de 2019 e 2020 (AUTOARIMA)**
 ![produção gás natural onshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178397-009b3300-da2f-11e9-8ff7-aea8e79e4e16.png)
 
-**5)Previsão Produção de Gás Natural Offshore Nacional para os anos de 2019 e 2020 (AUTOARIMA)**
+Acesso ao script para a geração desses gráficos [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20onshore%20(s%C3%A9rie%20temporal).py)
+
+#### Decomposição da série temporal e previsão da produção de Gás Natural Offshore Nacional para os anos de 2019 e 2020
+![Figure_2](https://user-images.githubusercontent.com/48027825/76637696-f8c5d280-6529-11ea-9188-66a448d0e605.png)
 ![produção gás natural offshore (serie temporal)](https://user-images.githubusercontent.com/48027825/65178415-0abd3180-da2f-11e9-9c85-e41f2fdf6762.png)
 
-**6)Previsão Produção de Gás Natural Total (Onshore X Offshore) Nacional para os anos de 2019 e 2020 (AUTOARIMA)**
+Acesso ao script para a geração desses gráficos [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20offshore%20(s%C3%A9rie%20temporal).py)
+
+#### Decomposição da série temporal e previsão da produção de Gás Natural Total Nacional para os anos de 2019 e 2020
+![Figure_1](https://user-images.githubusercontent.com/48027825/76637970-6c67df80-652a-11ea-9cad-fb38d8b7567a.png)
 ![produção gás natural offshore onshore total (serie temporal)](https://user-images.githubusercontent.com/48027825/65178462-26283c80-da2f-11e9-9ea7-9f2bd6e68b28.png)
+
+Acesso ao script para a geração desses gráficos [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20onshore%20offshore%20total%20(s%C3%A9rie%20temporal).py)
