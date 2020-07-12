@@ -62,3 +62,18 @@ Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de 
 
 - Estados
   - [Alagoas]()
+  - [Amazonas]()
+  - [Bahia]()
+  - [Ceará]()
+  - [Espírito Santo]()
+  - [Maranhão]()
+  - [Rio Grande do Norte]()
+  - [Rio de Janeiro]()
+  - [Sergipe]()
+  - [São Paulo]()
+- Regiões
+  - [Nordeste]()
+  - [Norte]()
+  - [Sudeste]()
+- País
+  - [Brasil]()
