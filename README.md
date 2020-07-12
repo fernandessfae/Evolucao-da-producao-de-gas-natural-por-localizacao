@@ -29,8 +29,12 @@ Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natur
 #### Produção total de Gás Natural Nacional (Onshore X Offshore)
 ![gás natural anual onshore e offshore (brasil)](https://user-images.githubusercontent.com/48027825/87231542-6544c700-c38e-11ea-9fc7-c971946d43ba.png)
 
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20onshore%20e%20offshore%20(brasil).py) o script com os códigos para gerar esse gráfico.
+
 #### Produção total de Gás Natural Nacional (Onshore e Offshore) 
 ![gás natural anual total (brasil)](https://user-images.githubusercontent.com/48027825/87231354-e4390000-c38c-11ea-9c53-5d1d088c94d1.png)
+
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(brasil).py) o script com os códigos para gerar esse gráfico.
 
 ## Utilização de séries temporais
 
