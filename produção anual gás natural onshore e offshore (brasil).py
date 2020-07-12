@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 ''' Aqui vamos fazer um histograma com a produção de gás natural total onshore X offshore 
     de todos os estados produtores, entre os anos de 2009 a 2018.'''
@@ -33,14 +34,12 @@ mar = novo_dataframe(mar)
 def histograma(x):
     plt.figure(figsize = (10, 5))
     plt.xticks(x['Ano'])
-    plt.xlabel('Produção Anual')
-    plt.ylabel('Total Produção Anual (m³)')
     if x is terra:
-        plt.bar(x.iloc[:, 0], x.iloc[:, 1], color = 'brown')
-        plt.title('Produção de gás natural total onshore dos estados produtores')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'brown', data = terra)
+        plt.title('Produção de gás natural total onshore dos estados produtores', fontsize = 16, fontweight = 'bold')
     elif x is mar:
-        plt.bar(x.iloc[:, 0], x.iloc[:, 1], color = 'blue')
-        plt.title('Produção de gás natural total offshore dos estados produtores')
+        sns.barplot(x = 'Ano', y = 'Produção de gás natural (m³)', color = 'blue', data = mar)
+        plt.title('Produção de gás natural total offshore dos estados produtores', fontsize = 16, fontweight = 'bold')
 
 #Visualização dos gráficos
 histograma(terra)
