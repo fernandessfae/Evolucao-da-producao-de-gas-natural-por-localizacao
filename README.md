@@ -9,17 +9,17 @@ Sabemos que a produção de gás natural é um forte indicador para saber como e
 #### Produção total de Gás Natural por Estados (Onshore)
 ![gás natural anual onshore (estados)](https://user-images.githubusercontent.com/48027825/87231344-d5eae400-c38c-11ea-958a-75e300bdac70.png)
 
-Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20onshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado.
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20onshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor onshore.
 
 #### Produção total de Gás Natural por Estados (Offshore)
 ![gás natural anual offshore (estados)](https://user-images.githubusercontent.com/48027825/87231345-d7b4a780-c38c-11ea-9eb2-426044bd95c0.png)
 
-Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20offshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore.ipynb) para maior detalhamento dos gráficos de cada estado.
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20offshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor offshore.
 
 #### Produção total de Gás Natural por Estado (Onshore e Offshore) 
 ![gás natural anual total (estados)](https://user-images.githubusercontent.com/48027825/87231347-dbe0c500-c38c-11ea-93e7-86b939678b33.png)
 
-Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(estado).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore%20e%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado.
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(estado).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore%20e%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor onshore e offshore.
 
 #### Produção total de Gás Natural por Região (Onshore e Offshore) 
 ![gás natural anual total (regiões)](https://user-images.githubusercontent.com/48027825/87231348-ddaa8880-c38c-11ea-8be0-17fdfea41ca0.png)
