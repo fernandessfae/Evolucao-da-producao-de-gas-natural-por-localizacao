@@ -61,7 +61,7 @@ Acesso ao script para a geração desses gráficos [aqui](https://github.com/fer
 Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de uma forma mais detalhada com mais informações sobre a produção de gás natural em cada estado, região e país, juntamente com a sua previsão futura.
 
 - Estados
-  - [Alagoas]()
+  - [Alagoas](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20o%20estado%20de%20Alagoas.ipynb)
   - [Amazonas]()
   - [Bahia]()
   - [Ceará]()
