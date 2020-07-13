@@ -62,7 +62,7 @@ Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de 
 
 - Estados
   - [Alagoas](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20o%20estado%20de%20Alagoas.ipynb)
-  - [Amazonas]()
+  - [Amazonas](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20o%20estado%20do%20Amazonas.ipynb)
   - [Bahia]()
   - [Ceará]()
   - [Espírito Santo]()
