@@ -19,12 +19,17 @@ Podemos ver aqui que o estado do **Rio de Janeiro** é o que mais se destaca na 
 #### Produção total de Gás Natural por Estado (Onshore e Offshore) 
 ![gás natural anual total (estados)](https://user-images.githubusercontent.com/48027825/87231347-dbe0c500-c38c-11ea-93e7-86b939678b33.png)
 
-Podemos ver aqui que o estado do **Rio de Janeiro** é o que mais se destaca na produção de gás natural total em todo o Brasil, mesmo tendo somente a produção offshore, e  ultrapassando o estado do **Amazonas**, que só possui a produção onshore. <br/> Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(estado).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore%20e%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor onshore e offshore.
+Podemos ver aqui que o estado do **Rio de Janeiro** é o que mais se destaca na produção de gás natural total em todo o Brasil, mesmo tendo somente a produção offshore, e  ultrapassando o estado do **Amazonas**, que só possui a produção onshore. <br/>
+Agora iremos ver os 5 maiores estados produtores de gás natural.
+
+![Top 5 Maiores produtores de gás natural](https://user-images.githubusercontent.com/48027825/87477150-06858480-c5fe-11ea-9620-1156c22a77a7.png)
+
+Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20total(estado).py) o script com os códigos para gerar esses gráficos, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore%20e%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor onshore e offshore.
 
 #### Produção total de Gás Natural por Região (Onshore e Offshore) 
 ![gás natural anual total (regiões)](https://user-images.githubusercontent.com/48027825/87231348-ddaa8880-c38c-11ea-8be0-17fdfea41ca0.png)
 
-Podemos perceber aqui que a região **sudeste** possui a maior produção nacional de gás natural total. Entretanto vale ressaltar que a região **norte**, representado apenas pelo estado do **Amazonas**, que possui apenas a produção onshore registrada, ao longo dos anos, conseguiu chegar próximo a produção total de toda a região **nordeste**, percebendo que a aqueela região, como um todo, pode ter uma grande reserva de gás natural, consequentemente de petróleo, ainda não explorada. <br/>
+Podemos perceber aqui que a região **sudeste** possui a maior produção nacional de gás natural total. Entretanto vale ressaltar que a região **norte**, representado apenas pelo estado do **Amazonas**, que possui apenas a produção onshore registrada, ao longo dos anos, conseguiu chegar próximo a produção total de toda a região **nordeste**, percebendo que a aquela região, como um todo, pode ter uma grande reserva de gás natural, consequentemente de petróleo, ainda não explorada. <br/>
 Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20anual%20%20total(regi%C3%A3o).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Regi%C3%B5es%20produtoras%20de%20g%C3%A1s%20natural%20onshore%20e%20offshore.ipynb) para maior detalhamento dos gráficos de cada região produtora onshore e offshore.
 
 #### Produção total de Gás Natural Nacional (Onshore X Offshore)
