@@ -65,7 +65,7 @@ Acesso ao script para a geração desses gráficos [aqui](https://github.com/fer
 Acesso ao script para a geração desses gráficos [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20g%C3%A1s%20natural%20onshore%20offshore%20total%20(s%C3%A9rie%20temporal).py)
 
 ## Informações adicionais sobre esses dados
-Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de uma forma mais detalhada com mais informações sobre a produção de gás natural em cada estado, região e país, juntamente com a sua previsão futura.<br/>
+Tudo que foi exposto acima, em termo de gráfico e previsão, será abordado de uma forma mais detalhada com mais informações sobre a produção de gás natural em cada estado e região, juntamente com a sua previsão futura.<br/>
 Obs: As **previsões** estão no final da página de cada estado/região.
 
 - Estados
@@ -83,5 +83,3 @@ Obs: As **previsões** estão no final da página de cada estado/região.
   - [Nordeste](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20a%20regi%C3%A3o%20nordeste%20.ipynb)
   - [Norte](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20o%20estado%20do%20Amazonas.ipynb)
   - [Sudeste](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Informa%C3%A7%C3%B5es%20adicionais%20sobre%20a%20regi%C3%A3o%20sudeste.ipynb)
-- País
-  - [Brasil]()
