@@ -111,3 +111,15 @@ plt.title('Produção de gás natural dos estados produtores onshore', fontsize 
 plt.legend(loc = 'best')
 plt.tight_layout()
 plt.show()
+
+# Top 5 maiores estados produtores de gás natural onshore do Brasil
+dados = dados.loc[dados['Localização'] == 'Terra']
+dados['Produção de gás natural (milhões m3)'] = dados['Produção de gás natural (milhões m3)'].mul(1000000)
+dados = dados.rename(columns = {'Produção de gás natural (milhões m3)' : 'Produção de gás natural (m³)'})
+dados = dados.groupby(['UF'])['Produção de gás natural (m³)'].sum().reset_index()
+
+plt.figure(figsize = (10, 5))
+plt.bar(dados.nlargest(5, 'Produção de gás natural (m³)')['UF'], dados.nlargest(5, 'Produção de gás natural (m³)')['Produção de gás natural (m³)'], color = plt.cm.Set1(np.arange(5)))
+plt.title('Os 5 maiores estados brasileiros produtores de gás natural onshore (2009 - 2018)', fontsize = 16, fontweight = 'bold')
+plt.ylabel('Quantidade (m³)')
+plt.show()
