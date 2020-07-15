@@ -9,10 +9,14 @@ Sabemos que a produção de gás natural é um forte indicador para saber como e
 #### Produção total de Gás Natural por Estados (Onshore)
 ![gás natural anual onshore (estados)](https://user-images.githubusercontent.com/48027825/87231344-d5eae400-c38c-11ea-958a-75e300bdac70.png)
 
+![Top 5 Maiores produtores de gás natural onshore](https://user-images.githubusercontent.com/48027825/87496212-84ab5080-c629-11ea-87ed-6508bb038d24.png)
+
 Podemos ver aqui que o estado do **Amazonas** é o que mais se destaca na produção de gás natural onshore em todo o Brasil. Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20onshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20onshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor onshore.
 
 #### Produção total de Gás Natural por Estados (Offshore)
 ![gás natural anual offshore (estados)](https://user-images.githubusercontent.com/48027825/87231345-d7b4a780-c38c-11ea-9eb2-426044bd95c0.png)
+
+![Top 5 Maiores produtores de gás natural offshore](https://user-images.githubusercontent.com/48027825/87496211-8412ba00-c629-11ea-8e7f-266072d0defb.png)
 
 Podemos ver aqui que o estado do **Rio de Janeiro** é o que mais se destaca na produção de gás natural offshore em todo o Brasil. Acesse [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/produ%C3%A7%C3%A3o%20anual%20g%C3%A1s%20natural%20offshore%20(estados).py) o script com os códigos para gerar esse gráfico, e [aqui](https://github.com/fernandessfae/Evolucao-da-producao-de-gas-natural-por-localizacao/blob/master/Estados%20produtores%20de%20g%C3%A1s%20natural%20offshore.ipynb) para maior detalhamento dos gráficos de cada estado produtor offshore.
 
